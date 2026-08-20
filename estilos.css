@@ -498,26 +498,3 @@ body.oscuro #modoBtn {
     }
 
 }
-/* LOGO DEL MENÚ */
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-}
-
-
-/* LOGO DE LA TARJETA */
-
-.logo-hero {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 15px;
-}
