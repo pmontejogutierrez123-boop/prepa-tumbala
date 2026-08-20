@@ -1,0 +1,500 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #202b3c;
+    transition: 0.3s;
+}
+
+
+/* ================================
+   MENÚ
+================================ */
+
+header {
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #202b3c;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: #3155d4;
+}
+
+#modoBtn {
+    border: none;
+    background: #eef2ff;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 60px 25px;
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
+.bienvenida {
+    color: #3155d4;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #3155d4;
+}
+
+.hero-texto > p:not(.bienvenida) {
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   TARJETA PRINCIPAL
+================================ */
+
+.hero-card {
+    width: 330px;
+    min-height: 330px;
+
+    background: linear-gradient(
+        145deg,
+        #3155d4,
+        #6d82ed
+    );
+
+    color: white;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    box-shadow: 0 20px 40px rgba(49,85,212,0.25);
+}
+
+.hero-card:first-letter {
+    font-size: 70px;
+}
+
+.hero-card h2 {
+    margin: 20px 0 10px;
+}
+
+
+/* ================================
+   BOTONES
+================================ */
+
+.boton {
+    display: inline-block;
+
+    background: #3155d4;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(49,85,212,0.3);
+}
+
+
+/* ================================
+   SECCIONES
+================================ */
+
+.seccion {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 70px 25px;
+}
+
+.titulo {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 40px;
+}
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta h3,
+.tarjeta h2 {
+    margin: 15px 0;
+}
+
+.tarjeta p {
+    line-height: 1.7;
+}
+
+.icono {
+    font-size: 45px;
+}
+
+
+/* ================================
+   FRASE
+================================ */
+
+.frase {
+    background: #202b3c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 25px;
+}
+
+.frase h2 {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 30px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   PÁGINAS INTERNAS
+================================ */
+
+.pagina {
+    text-align: center;
+
+    padding: 100px 25px 60px;
+}
+
+.pagina h1 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.pagina > p:last-child {
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+}
+
+
+/* ================================
+   NOSOTROS
+================================ */
+
+.informacion {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.grande {
+    min-height: 250px;
+}
+
+
+/* ================================
+   CONTACTO
+================================ */
+
+.contacto {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 25px 100px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+}
+
+.contacto-info {
+    background: #3155d4;
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+.contacto-info h2 {
+    margin-bottom: 30px;
+}
+
+.contacto-info p {
+    margin: 22px 0;
+}
+
+form {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+}
+
+form h2 {
+    margin-bottom: 25px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3155d4;
+}
+
+textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #151d2b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ================================
+   MODO OSCURO
+================================ */
+
+body.oscuro {
+    background: #111827;
+
+    color: #f5f7fb;
+}
+
+body.oscuro header {
+    background: #1f2937;
+}
+
+body.oscuro .menu a {
+    color: white;
+}
+
+body.oscuro .tarjeta,
+body.oscuro form {
+    background: #1f2937;
+}
+
+body.oscuro #modoBtn {
+    background: #374151;
+}
+
+
+/* ================================
+   CELULAR
+================================ */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .tarjetas,
+    .informacion,
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
